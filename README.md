@@ -26,5 +26,7 @@ Run it in the end after modifying the offset values and the setpoint value in th
 The setpoint should be modifyed by setting the value when the bot is perpendicular to ground using serial monitor. This is the point which is considered to have a perfect balance, and the control algorithm strives to achieve this balance point (zeroth point). 
 This point should be read by running the code and reading the input value from serial monitor for which the bot is perfectly balanced. This value should be plugged in/ edited in the code. 
 
+** 4) MPU6050_printRAWvalues.ino
+This code is to be used optionally, in order to see how the MPU works.
 
 
