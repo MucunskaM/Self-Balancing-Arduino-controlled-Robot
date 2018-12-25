@@ -12,3 +12,19 @@ The code segments we used throughout the development of the project are the foll
 After connecting the motors and the driver to the arduino board according to the desired scheme, this code is to be used to check if the motors and the driver work properly.
 After running the code, it runs the motors at different speeds and directions, and enables the user to check if the hardware and the connections are working or there is some anomaly or mistake. 
 
+2) MPU6050_calibration.ino
+
+After connecting the MPU6050 sensor, and deciding what will be its position on the robot, it is important to modify the offset values in the code according to your robot's needs. This is done by using this code script, which prints the desired offset values for each axis that are to be plugged in in the main program _24.12_Self_Balans main code.ino. 
+For example: mpu.setXGyroOffset(220);
+
+It is important to modify these values, since they ......
+
+3) _24.12_Self_Balans main code.ino
+
+This is the main portion of the code that does all the work. The code is well commented and explained in the script. 
+Run it in the end after modifying the offset values and the setpoint value in the code. [For example : double setpoint= 170.3;]
+The setpoint should be modifyed by setting the value when the bot is perpendicular to ground using serial monitor. This is the point which is considered to have a perfect balance, and the control algorithm strives to achieve this balance point (zeroth point). 
+This point should be read by running the code and reading the input value from serial monitor for which the bot is perfectly balanced. This value should be plugged in/ edited in the code. 
+
+
+
