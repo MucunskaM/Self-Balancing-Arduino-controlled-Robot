@@ -7,3 +7,8 @@ The general idea is to have a robot on two wheels connected to DC motors, that w
 
 The code segments we used throughout the development of the project are the following ones: 
 
+1) Motor_Test.ino
+
+After connecting the motors and the driver to the arduino board according to the desired scheme, this code is to be used to check if the motors and the driver work properly.
+After running the code, it runs the motors at different speeds and directions, and enables the user to check if the hardware and the connections are working or there is some anomaly or mistake. 
+
